@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t ndangellucian/docker-react -f dockerfile.dev .
+  - docker build -t ndangellucian/docker-react -f Dockerfile.dev .
 
 script:
   - docker run ndangellucian/docker-react npm run test -- --coverage
